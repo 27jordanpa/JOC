@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: pink;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: pink;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.round {
+    border-radius:50%;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: pink;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Jo's Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>My Favorite Book</h2>
+      <img src="https://m.media-amazon.com/images/I/81S4dsWUoFL._AC_UF1000,1000_QL80_.jpg" height=200 width=130>
+      <p>This book was ligitimately one of the best books ever created. It is an action, fantasy, and romance. Even though its not typically your style, you will still love it because it iss fabulous. There is nothing more to say. Dont yuck my yum until you have read it.</p>
+    </div>
+    <div class="card">
+      <h2>My favorite movie</h2>
+      <div>
+      <a href= "https://www.youtube.com/watch?v=eyKOgnaf0BU"> The movie trailer</a>
+      </div>
+      <img src="https://miro.medium.com/v2/resize:fit:720/1*sXp0-9blk4ZYBRACAE2daQ.jpeg" height=200>
+      <p>This movie is the best ever because it has Dwayne Johnson (who is the best actor ever) and Zac Efron (who is kind of weird nowadays but used to be way cool). The whole movie is just so funny and terrific. This movie has an excellent plot with many twists and turns. There is a little bit of romance, some life lessons, and a lot of cool slow-mo action scenes.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am a 15 year old that goes to Piedmont High School. I have a dog and a cat. I am an only child. I like to read, watch movies and paint. My favorite food is calimari. My favorite drink is boba.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <a href = "https://www.instagram.com/"><img class="round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"height=150></a><br>
+      <a href = "https://www.apple.com/apple-music/"><img class="round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png"height=150></a><br>
+      <a href = "https://www.netflix.com/"><img class="round" src="https://media1.popsugar-assets.com/files/thumbor/LjqVLABBVQa12-sYzc0OYkCU-Cs=/fit-in/792x792/filters:format_auto():upscale()/2019/02/01/911/n/1922283/94a9fe8d5c54b1a22eaf19.91477690_.jpg"height=150></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><a href = "https://docs.google.com/forms/d/e/1FAIpQLScsq2po52Bb7ucNupXeXxNrIckrdL_yg10o_delvDLXOiJtcA/viewform?usp=sf_link">Comments</a></h2>
+</div>
+
+</body>
+</html>
